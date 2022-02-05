@@ -1,0 +1,229 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Lato', sans-serif;
+    
+}
+body{
+    margin-bottom: 100px;
+}
+a{
+    text-decoration: none;
+    color: rgba(255, 245, 238, 0.685);
+}
+li{
+    list-style: none;
+}
+.active{
+    background-color: #299191;   
+}
+
+header{
+   
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   padding: 0 80px;
+   background-color: #03529e;
+   
+     
+}
+input{
+    display: none;
+}
+label{
+    display: none;
+    font-size: 25px;
+    color: seashell;
+}
+.logo{
+    width: 150px;
+}
+ul{
+    display: flex;
+}
+ul li + li{
+    margin-left: 10px;
+} 
+ul a{
+    display: block;
+    padding: 15px;
+    font-weight:bold;
+}
+ul a:hover{
+    
+    background-color:rgba(113, 200, 226, 0.185);
+    color: seashell;
+   
+}
+nav.menu2{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    text-transform:uppercase;
+    background-color:#00a3d1; 
+    padding: 0 80px;
+
+}
+nav.menu2 a{
+    color: seashell;
+    font-weight:bold;
+    font-size: 15px;
+}
+.header__bottom{
+    width: 100%;
+    height: 10px;
+    background-color:#03529e ;
+    padding: 0 80px;
+}
+.main{
+    height: auto;
+    display: flex;
+    justify-content: space-around;
+    max-width: 1200px;
+    margin:0 auto;
+    
+}
+.sidebar{
+    min-width: 210px;
+    min-height:100vh ;
+    background-color: #2ea1a1;
+    display: flex;
+    flex-direction: column;
+    
+}
+.sidebar-logo{
+    margin: 0 auto;
+    margin-top: 25px;
+    text-align: center;
+}
+.sidebar-links{
+    
+    margin-top: 25px;
+}
+.sidebar-links a{
+    display: block;
+    color: #fff;
+    padding: 8px;  
+}
+.sidebar-links a:hover{  
+    background-color: #299191;
+
+}
+.unasus{
+    color: #fff;
+    font-size: 15px;
+    display: block;   
+}
+.cusos{
+    color: #fff;
+    font-size: 24px;
+    display: block;
+}
+.conteudo{
+    display: flex;
+    align-items: center;
+    border: 1px solid #c9caca;
+    width: 950px;
+    height: 150px;
+    margin: 0 15px;
+    margin-top: 18px;
+    background-color: #f8f8f9;
+    border-radius: 5px;
+}
+
+.conteudo li{
+    list-style: initial;
+    font-weight: bold;
+    color:#6197ce;
+    margin-top: 5px;
+}
+.conteudo p{
+    margin: 3.5px 0 10.5px;
+    color: #8b8b8c;
+}
+
+.icon i{
+    font-size:40px;
+    padding: 20px;
+    color: #4b4b4c;
+}
+/*sobre cursos*/
+.conteudo__sobre{
+    display: flex;
+     width: 950px;
+     margin:  15px;
+}
+.conteudo__sobre h3{
+    font-size:30px;
+    color: #2EA1A1;
+}
+.conteudo__sobre p{
+    font-size:20px;
+    margin-top: 20px;
+    color: rgba(0, 0, 0, 0.8);
+}
+
+.footer1{
+    display: flex;
+    justify-content: space-around;
+    padding-bottom: 15px;
+    background-color: #00a4d2;
+}
+.footer1 div + div{
+    border-left: 1px solid rgba(255, 245, 238, 0.123);
+    padding: 0 0 0 10px;
+}
+.footer1 div a {
+    margin-top: 5px;
+}
+.footer1 div a:hover {
+    margin-top: 5px;
+    color: seashell;
+    
+}
+h4{
+    color: seashell;
+    margin: 15px 0;
+    
+}
+
+
+@media (max-width:768px){
+    header{
+      height: 40px;
+      padding: 0 25px;
+      
+    }
+    .logo{
+        width: 100px;
+    }
+    .header__bottom, nav.menu2, nav.menu1{
+        display: none;
+    }
+    label{
+        display: block;
+        font-size: 25px;
+        font-weight: bold;
+        padding: 3px 10px;
+    }
+    label:hover{
+        background-color:rgba(0, 0, 0, 0.445); ;
+    }
+    nav.sidebar{ 
+        width:100% ;
+        position: absolute;
+        left: -100%;
+        transition: all .5s ease-in-out;
+        
+    }
+#chec:checked ~ nav.sidebar{
+    left: 0;
+        
+    }
+    .footer1{
+        display: none;
+    }
+ 
+}
